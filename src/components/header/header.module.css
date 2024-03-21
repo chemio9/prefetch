@@ -1,0 +1,35 @@
+/* start with "shown" position */
+/* will-change, top, right, left early to avoid extra repaints */
+.header {
+  position: relative;
+  width:100vw;
+  height: 3rem;
+  line-height:3rem;
+  background: #555;
+  will-change: transform;
+  transform: translateY(0%);
+  right: 0;
+  left: 0;
+  top: 0;
+}
+
+.header nav a {
+  font-weight: bold;
+  margin: 1rem;
+}
+/* apply fixed; set start point */
+.is--fixed {
+  position: fixed;
+  transform: translateY(-100%);
+}
+
+/* apply transition separately; no flicker */
+.is--ready {
+  transition: transform 0.2s ease-in-out;
+}
+
+/* set end point; with shadow */
+.is--shown {
+  transform: translateY(0%);
+  box-shadow: 0 3px 6px rgba(0,0,0, 0.16);
+}

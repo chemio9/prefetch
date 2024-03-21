@@ -1,0 +1,31 @@
+{
+  "name": "blogging",
+  "description": "An SPA that fetch JSON and display articles.",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "preact": "^10.19.6",
+    "wouter-preact": "^3.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.30",
+    "@babel/code-frame": "^7.24.2",
+    "@babel/core": "^7.24.3",
+    "@babel/plugin-transform-react-jsx-development": "^7.22.5",
+    "@babel/plugin-transform-react-jsx-source": "^7.24.1",
+    "@preact/preset-vite": "^2.8.2",
+    "@types/babel__code-frame": "^7",
+    "@types/babel__core": "^7",
+    "babel-plugin-transform-hook-names": "^1.0.2",
+    "postcss": "^8.4.38",
+    "postcss-preset-env": "^9.5.2",
+    "typescript": "^5.2.2",
+    "vite": "^5.2.0"
+  },
+}
